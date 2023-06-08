@@ -14,6 +14,7 @@
     <style>
      .iti{width: 100%;}
     </style>
+    <link href="css/doors.css" rel="stylesheet">
   </head>
 
 <body>
@@ -183,12 +184,12 @@
                 </strong>
               </p>
               <p>
-                <strong> Victoria Maurer: </strong> ΟΛΟΙ ΟΣΟΙ ΘΕΛΟΥΝ ΤΟ ΠΡΟΪΟΝ ΜΕ ΕΚΠΤΩΣΗ 50% ΠΡΕΠΕΙ ΝΑ ΚΑΝΟΥΝ ΑΙΤΗΣΗ συμπληρώνοντας την επίσημη φόρμα παραγγελίας. Δεν απαιτείται τίποτα άλλο. Αυτός είναι ο καλύτερος τρόπος για να επιτευχθεί ο μέγιστος αριθμός των ασθενών. ΔΕΝ ΧΡΕΙΑΖΕΤΑΙ ΝΑ ΠΑΤΕ ΚΑΠΟΥ ΚΑΙ ΝΑ ΣΥΜΠΛΗΡΩΣΕΤΕ ΚΑΤΙ - ΓΙΑ ΤΗΝ ΑΙΤΗΣΗ ΘΑ ΧΡΕΙΑΣΤΕΙ ΜΟΝΟ 1 ΛΕΠΤΟ ΑΠΟ ΤΟ ΧΡΟΝΟ ΣΑΣ. Αυτή η ευκαιρία θα είναι διαθέσιμη μέχρι τις
+                <strong> Victoria Maurer: </strong> ΟΛΟΙ ΠΟΥ ΘΕΛΟΥΝ ΝΑ ΛΑΒΟΥΝ ΤΟ ΠΡΟΪΟΝ ΜΕ ΕΚΠΤΩΣΗ ΕΩΣ 50% ΜΠΟΡΟΥΝ ΝΑ ΣΥΜΜΕΤΕΧΟΥΝ ΣΤΗΝ ΕΠΙΣΗΜΗ ΚΛΗΡΩΣΗ ΑΠΟ ΤΟΝ ΚΑΤΑΣΚΕΥΑΣΤΗ, και στη συνέχεια εισάγετε το όνομα και τον αριθμό του τηλεφώνου σας στην επίσημη φόρμα παραγγελίας. Δεν απαιτείται τίποτα άλλο. Αυτός είναι ο καλύτερος τρόπος για να επιτευχθεί ο μέγιστος αριθμός των ασθενών. ΔΕΝ ΧΡΕΙΑΖΕΤΑΙ ΝΑ ΠΑΤΕ ΚΑΠΟΥ ΚΑΙ ΝΑ ΣΥΜΠΛΗΡΩΣΕΤΕ ΚΑΤΙ - ΓΙΑ ΤΗΝ ΑΙΤΗΣΗ ΘΑ ΧΡΕΙΑΣΤΕΙ ΜΟΝΟ 1 ΛΕΠΤΟ ΑΠΟ ΤΟ ΧΡΟΝΟ ΣΑΣ. Αυτή η ευκαιρία θα είναι διαθέσιμη μέχρι τις
                 <script type="text/javascript">
                   dtime_nums(-1, true);
                 </script>
-                , aεπομένως μπορείτε να υποβάλετε αίτηση και να λάβετε την κρέμα
-                <a class="scroll" href="#"> Varihelp</a> με έκπτωση 50%.
+                , επομένως μπορείτε να δοκιμάσετε την τύχη σας και να λάβετε την κρέμα
+                <a class="scroll" href="#"> Varihelp</a> με έκπτωση έως και 50%.
               </p>
               <p>
                 <strong><i> Δημοσιογράφος </i> : Victoria, ίσως θα θέλατε να πείτε κάτι άλλο στους αναγνώστες μας πριν ολοκληρώσουμε τη διαβούλευση.
@@ -212,39 +213,264 @@
                   </script>.
                   <b>
                     Η κρέμα
-                    <a class="scroll" href="#"> Varihelp</a> μπορεί να παραγγελθεί με έκπτωση 50%
-                    <a class="scroll" href="#"> στην επίσημη φόρμα παραγγελίας</a>. </b><br>
+                    <a class="scroll" href="#"> Varihelp</a> μπορεί να παραγγελθεί με έκπτωση έως και 50%
+                    <a class="scroll" href="#"> συμμετέχοντας στην επίσημη κλήρωση</a>. </b><br>
                 </p>
 				<br>
-                <center><img src="images/prod.png" width=""></center>
-                <div class="price">
-                  <p>
-                    Παλιά τιμή: <span class="old_price"> 78€ </span>
-                  </p>
-                  <p>Καινούργια τιμή: <span> 39€ </span></p>
-                </div>
-				
-                <form method="post" geo="es" action="api.php" 
-	onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
-
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-
-                  <label> Όνομα </label>
-                  <div class="input-group tooltip-hide">
-                    <input class="form_group" name="name" required type="text">
+                
+                <!-- FORM -->
+                <center class="red_roulete" style="max-width: 960px;margin: 0 auto;">
+                  <div class="door__wrapper" id="roulette_start">
+                    <h2 class="door__title" style="color: #fff !important;">ΜΑΝΤΕΨΕ ΠΙΣΩ ΑΠΟ ΠΟΙΑ ΠΟΡΤΑ ΕΙΝΑΙ Η ΕΚΠΤΩΣΗ 50%</h2>
+                    <div class="door__container">
+                      <div class="box">
+                        <div class="hi">
+                          <p id="door__sales2" class="door__sales "></p>
+                        </div>
+                        <div id="door__2" class="door">
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="hi">
+                          <p id="door__sales1" class="door__sales "></p>
+                        </div>
+                        <div id="door__1" class="door">
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="hi">
+                          <p id="door__sales3" class="door__sales "></p>
+                        </div>
+                        <div id="door__3" class="door">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <label> Τηλέφωνο (ενεργό κινητό)</label>
-                  <div class="input-group tooltip-hide">
-                    <input class="form_group only_number" name="phone" required type="tel">
+                  <div id="form">
+                    <div class="order_block">
+        
+        
+                      <h3>ΤΟ ΜΟΝΟ ΠΟΥ ΧΡΕΙΑΖΕΤΑΙ ΕΙΝΑΙ ΝΑ ΕΙΣΑΓΕΤΕ ΤΟ ΟΝΟΜΑ ΚΑΙ ΤΟΝ ΑΡΙΘΜΟ ΤΟΥ ΤΗΛΕΦΩΝΟΥ ΣΑΣ.<br><!--<span class="time_remains" id="min" style="color: red;">10</span> :
+              <span class="time_remains" id="sec" style="color: red;">00</span>-->
+                      </h3>
+        
+                      
+                      <div class="form_wrap" id="objectScrollAttention">
+                        <center><img src="images/prod.png" width="" style="max-width: 190px;"></center>
+                        <div style="    margin-top: 12px;">
+                          <span class="time_remains" id="min" style="color: red;font-weight: bold;">10</span> :
+                          <span class="time_remains" id="sec" style="color: red;font-weight: bold;">00</span>
+                        </div>
+                        <div class="price">
+                          <label class="descount" style="color: #3578e5; font-size: 27px !important; font-weight: bold;    display: block;">Έκπτωση 50%</label>
+                          <p>
+                            Παλιά τιμή: <span class="old_price"> 78€ </span>
+                          </p>
+                          <p>Καινούργια τιμή: <span> 39€ </span></p>
+                        </div>
+                        <form method="post" geo="es" action="api.php"
+                              onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+    
+                          <input name="subid" type="hidden" value="{subid}">
+                          <input name="px" type="hidden" value="{px}">
+                          <input name="bayer" type="hidden" value="{bayer}">
+    
+                          <label> Όνομα </label>
+                          <div class="input-group tooltip-hide">
+                            <input class="form_group" name="name" required type="text">
+                          </div>
+                          <label> Τηλέφωνο (ενεργό κινητό)</label>
+                          <div class="input-group tooltip-hide">
+                            <input class="form_group only_number" name="phone" required type="tel">
+                          </div>
+                          <center>
+                            <button class="js_submit button__text btn blue">
+                              ΠΑΡΑΓΓΕΙΛΕΤΕ ΤΩΡΑ
+                            </button>
+                          </center>
+                        </form>
+                      </div>
+                    </div>
                   </div>
-                  <center>
-                    <button class="js_submit button__text btn blue">
-                      ΠΑΡΑΓΓΕΙΛΕΤΕ ΤΩΡΑ
-                    </button>
-                  </center>
-                </form>
+                  <div class="spin-result-wrapper">
+                    <div class="pop-up-window">
+                      <span class="pop-up-heading">Συγχαρητήρια!</span>
+                      <p class="ruletka-p pop-up-text">Μπορείτε να παραλάβετε το Varihelp με έκπτωση 50%!</p>
+                      <a class="pop-up-button" href="#form">OK</a>
+                    </div>
+                  </div>
+                  <script>
+                    let discount1 = '10%'
+                    let discount2 = '25%'
+                    let discount3 = '50%'
+                    document.querySelectorAll('.card__item__sale-30').forEach(disc => {
+                      disc.innerText = discount1
+                    })
+                    document.querySelectorAll('.card__item__sale-50').forEach(disc => {
+                      disc.innerText = discount2
+                    })
+                    document.querySelectorAll('.card__item__sale-100').forEach(disc => {
+                      disc.innerText = discount3
+                      // document.querySelector('.discountYouWinn').innerText = discount3
+                    })
+                  </script>
+                </center>
+                <!-- // FORM -->
+                <style>
+                  #order_form .error-box {
+                    color: #fff;
+                    background-color: #DE5042!important;
+                    border-radius: 5px;
+                    text-align: center;
+                    width: 240px;
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin: 5px auto !important;
+                    z-index: 100;
+                  }
+    
+                  .spin-result-wrapper {
+                    display: none;
+                    padding: 0 10px;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    width: 100%;
+                    top: 0;
+                    z-index: 999;
+                    left: 0;
+                    height: 100%;
+                    position: fixed;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    text-align: center;
+                  }
+    
+                  .pop-up-window {
+                    position: relative;
+                    max-width: 400px;
+                    right: 0px;
+                    left: 0px;
+                    top: 40%;
+                    margin: 0px auto;
+                    background: #ffffff none repeat scroll 0% 0%;
+                    text-align: center;
+                    padding: 10px;
+                    padding-top: 70px;
+                    padding-bottom: 20px;
+                    border-radius: 10px;
+                    animation: 0.7s ease 0s normal none 1 running pop-up-appear;
+                  }
+    
+                  .close-popup {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(../fonts/cross.svg);
+                    background-size: 100%;
+                    top: -40px;
+                    border-radius: 50%;
+                    -webkit-box-shadow: 0 0 10px #fff;
+                    box-shadow: 0 0 10px #fff;
+                    right: -40px;
+                    cursor: pointer;
+                  }
+    
+                  .pop-up-heading {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                  }
+    
+                  .pop-up-text {
+                    margin-bottom: 25px;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: center !important;
+                  }
+    
+                  .pop-up-button {
+                    text-transform: uppercase;
+                    text-decoration: none !important;
+                    padding: 10px 20%;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    background-color: #71c341;
+                    color: white !important;
+                    border: medium none;
+                    cursor: pointer;
+                    outline: medium none;
+                  }
+    
+                  .cursor-text:active {
+                    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+                    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+                  }
+    
+                  .pop-up-layer {
+                    position: fixed !important;
+                    top: 0px !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    background-color: rgba(0, 0, 0, 0.7) !important;
+                    z-index: 99 !important;
+                  }
+    
+                  .pop-up-layer-show {
+                    display: block;
+                  }
+    
+                  .pop-up-window {
+                    position: relative;
+                    max-width: 400px;
+                    right: 0px;
+                    left: 0px;
+                    top: 40%;
+                    margin: 0px auto;
+                    background: #fff none repeat scroll 0% 0%;
+                    text-align: center;
+                    padding: 10px;
+                    padding-top: 70px;
+                    padding-bottom: 20px;
+                    border-radius: 10px;
+                    animation: 0.7s ease 0s normal none 1 running pop-up-appear;
+                  }
+    
+                  .pop-up-window::before {
+                    content: "";
+                    position: absolute;
+                    width: 110px;
+                    height: 110px;
+                    top: -55px;
+                    left: 0;
+                    right: 0px;
+                    margin: 0 auto;
+                    background-color: #71c341;
+                    border-radius: 50%;
+                    animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-before;
+                  }
+    
+                  .pop-up-window::after {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 20px;
+                    top: -20px;
+                    left: 0px;
+                    right: 0;
+                    margin: 0 auto;
+                    border-width: medium medium 4px 4px;
+                    border-style: none none solid solid;
+                    border-color: currentcolor currentcolor white white;
+                    -moz-border-top-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    border-image: none;
+                    transform: rotate(-45deg);
+                    transition: opacity 1s ease 0s;
+                    animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-after;
+                  }
+                </style>
+                
+                
 				
               </div>
               <br>
@@ -431,7 +657,7 @@
       <a class="privacy-policy" href="privacy.html" target="_blank">Privacy policy</a>
     </div>
   </div>
-
+  <script type="text/javascript" src="js/door.js?v=1.0.2"></script>
 <script type="text/javascript" src="/libs/js/gdpr.js"></script>
 <link rel="stylesheet" href="/libs/js/gdpr.css">
 <script>
